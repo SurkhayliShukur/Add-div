@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn {
+  margin: 2rem;
+  font-size: 0.8rem;
+}
+div {
+    position: absolute;
+    width: 100px;
+    height : 100px;
+    top: 100px;
+    left: 100px;   
+}
