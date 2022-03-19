@@ -7,10 +7,10 @@
   margin: 2rem;
   font-size: 0.8rem;
 }
-div {
+.addDiv {
     position: absolute;
     width: 100px;
     height : 100px;
     top: 100px;
-    left: 100px;   
+    left: 100px; 
 }

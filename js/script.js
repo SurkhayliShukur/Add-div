@@ -1,27 +1,22 @@
-let success = document.querySelector(".btn-success");
+const btnAdd = document.querySelector(".btn");
 
-success.addEventListener("click", addNew);
 
-var divs = document.getElementsByTagName("div");
-var winWidth = window.innerWidth;
-var winHeight = window.innerHeight;
+btnAdd.addEventListener("click",addNew);
 
-function addNew() {
-  for (var i = 0; i < divs.length; i++) {
-    var randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
-    var thisDiv = divs[i];
+function addNew(){
+  const newDiv = document.createElement("div");
+  console.log("add");
+  newDiv.classList.add('addDiv');
+  document.body.appendChild(newDiv);
 
-    thisDiv.style.backgroundColor = "#" + randomColor;
-
-    randomTop = getRandomNumber(0, winHeight);
-    randomLeft = getRandomNumber(0, winWidth);
-
-    thisDiv.style.top = randomTop + "px";
-    thisDiv.style.left = randomLeft + "px";
-  }
+  var bgColor = "#" + Math.round(0xffffff*Math.random()).toString(16);
+  newDiv.style.background = bgColor;
 }
 
-function getRandomNumber(min, max) {
-  return Math.random() * (max - min) + min;
-}
+
+// function randomRectangles(){
+// ctx.beginPath();
+// ctx.rect(20, 20, 150, 100);
+// ctx.stroke();
+// }
