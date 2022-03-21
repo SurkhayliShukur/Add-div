@@ -3,8 +3,6 @@ let addDiv = document.querySelector(".btn-success");
 addDiv.addEventListener("click", ()=>{
     const x =Math.floor(Math.random()*100+20);
     const y =Math.floor(Math.random()*100+20); 
-    newDiv.style.left = x + "px";
-    newDiv.style.top = y + "px";
     const newDiv = document.createElement("div");
     document.body.appendChild(newDiv);
 
@@ -19,5 +17,7 @@ addDiv.addEventListener("click", ()=>{
     newDiv.style.width = randomWid + "px";
     newDiv.style.height = randomHei +"px";
     newDiv.style.visibility = "visible"; 
+    newDiv.style.left = x + "px";
+    newDiv.style.top = y + "px";
    
 });
