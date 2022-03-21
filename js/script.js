@@ -5,8 +5,8 @@ addDiv.addEventListener("click", () => {
   document.body.appendChild(newDiv);
 
   var bgColor = "#" + Math.round(0xffffff * Math.random()).toString(16);
-  const x = Math.round(Math.random() * 100 + 20);
-  const y = Math.round(Math.random() * 100 + 20);
+  const x = Math.round(Math.random() * 200 + 20);
+  const y = Math.round(Math.random() * 200 + 20);
   var randomWid = Math.floor(Math.random() * 300);
   var randomHei = Math.floor(Math.random() * 300);
   newDiv.style.background = bgColor;
