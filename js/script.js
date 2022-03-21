@@ -1,13 +1,11 @@
 let addDiv = document.querySelector(".btn-success");
 
 addDiv.addEventListener("click", ()=>{
-    const x =Math.floor(Math.random()*500+20);
-    const y =Math.floor(Math.random()*500+20);
-    const newDiv = document.createElement("div");
+    const x =Math.floor(Math.random()*100+20);
+    const y =Math.floor(Math.random()*100+20); 
     newDiv.style.left = x + "px";
     newDiv.style.top = y + "px";
-    console.log("add");
-    newDiv.classList.add('AddDiv');
+    const newDiv = document.createElement("div");
     document.body.appendChild(newDiv);
 
     var bgColor = "#" + Math.round(0xffffff * Math.random()).toString(16);
@@ -16,9 +14,10 @@ addDiv.addEventListener("click", ()=>{
     newDiv.addEventListener("click", () => {
         newDiv.remove();
     });
-    var randomWid = Math.floor(Math.random()*100);
-    var randomHei = Math.floor(Math.random()*100);
-    newDiv.style.width = randomWid;
-    newDiv.style.height = randomHei;
-    newDiv.style.visibility = "visible";
+    var randomWid = Math.floor(Math.random()* 100);
+    var randomHei = Math.floor(Math.random()* 100);
+    newDiv.style.width = randomWid + "px";
+    newDiv.style.height = randomHei +"px";
+    newDiv.style.visibility = "visible"; 
+   
 });
